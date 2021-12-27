@@ -1,0 +1,136 @@
+/******* ITS Tecnologia Criativa ********/
+/*! Desenvolvido por Iaponã Pedroza - 
+- Jaboatão dos Guararapes - PE - BR -
+Agosto - Dezembro - 2021 */
+@font-face {
+    font-family: "Mic-32";
+    src: local(mic_32regular), url(../font/mic_32regular.ttf)
+}
+@font-face {
+    font-family: "Philosopher";
+    src: local(philosopher), url(../fonts/Philosopher-Regular.ttf) 
+}
+@font-face {
+    font-family: "Philosopher Bold";
+    src: local(philosopher-Bold), url(../fonts/Philosopher-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Philosopher Bold Italic" ;
+    src: local(philosopher-BoldItalic), url(../fonts/Philosopher-BoldItalic.ttf)
+}
+@font-face {
+    font-family: "Philosopher Italic";
+    src: local(philosopher-Italic), url(../fonts/Philosopher-Italic.ttf)
+}
+/* Hacking for boxing models */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(168, 180, 252);
+    font-family: Philosopher;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow:scroll;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(35, 4, 173);
+    background-color: rgb(241, 214, 214);
+    color: rgb(119, 117, 245);
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+#counter {
+    display: flex;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+}
+
+.button {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    text-align: center;
+    padding: 5px;
+    width: auto;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  #tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  :checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+#title,
+.subTitle,
+.postTitle {
+    color: rgb(5, 5, 116);
+}
+.menuAbaixo {
+    padding: 20px;
+    display: block;
+}
+
+.menuAbaixo li{
+    list-style-type: none;
+    margin-left: 15px;
+}
+.postTitle {
+    font-size: 16px;
+    font-style: italic;
+}
+.post {
+    padding: 15px 3rem 25px 2rem;
+    background-color: rgb(252, 252, 188);
+    border: black solid 2px;
+    border-top-left-radius: 2.5rem;
+    border-top: darkblue dotted 12px;
+    border-bottom: yellowgreen dashed 3px;
+    margin: 20px;
+}
+.imgPost {
+    border-radius: 50%;
+    padding: 35px;
+}
+.imgtopo {
+    border-radius: 50px;
+    border: darkred solid 1px;
+}
